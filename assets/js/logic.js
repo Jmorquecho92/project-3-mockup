@@ -6,9 +6,9 @@ var map;
 function displayBreweryInfo() {
 	var zipcode = $("#zipcode-input").val().trim();
 	var queryURL = "http://api.brewerydb.com/v2/locations?postalCode=" + zipcode + "&key=0e8760e7ad6c26f9098f623ca7d0b5a7";
-	var apiKey = "272f3002d2ba42214bb93754e572957f692647d0";
+	var apiKey = "AIzaSyBtF_CENpOBk5v7KUFNo0SR4aTDbyCcqOA";
 
-		        var proxyCall = function(queryURL){
+		    var proxyCall = function(queryURL){
 			return framejax.ajax({
 			method: "GET",
 			dataType: "json",

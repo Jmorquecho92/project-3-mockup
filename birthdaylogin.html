@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login Page</title>
+</head>
+<link rel = "stylesheet" type = "text/css" href = "agevalidator.css"/>
+<body>
+	<div class="ageWrap ageGateActive"> 
+<div id="ageGate" style="display: block; opacity: 1; visibility: visible; top: 10px;">
+
+<div class="border_wrap">
+	<form name="ageGateForm" id="ageGateForm" class="cf">
+        <input type="hidden" name="requiredAge" id="requiredAge" value="21">
+        <h4>You must be 21 years of age to enter this site.</h4>
+	<ul>
+    <li><label>Month <span class="format">(MM)</span></label>
+        	<input type="tel" class="ageInput" name="birthMonth" id="birthMonth" maxlength="2"></li>
+  
+     <li><label>Day  <span class="format">(DD)</span></label> 
+       <input type="tel" class="ageInput" name="birthDay" id="birthDay" maxlength="2"></li> 
+     <li><label>Year <span class="format">(YYYY)</span></label>
+         <input type="tel" class="ageInput" name="birthYear" id="birthYear" maxlength="4"></li>
+      <li class="errors"></li>
+	</ul>
+        <input type="submit" name="submit" class="btn" value="I Agree">
+        </form>
+</div>
+</div>
+  </div>
+
+</body>
+</html>
