@@ -1,0 +1,47 @@
+: black;
+	color: white;
+	border: solid 1px white;
+	/*background-image: url("https://s3.amazonaws.com/brewerydbapi/beer/FOu9QN/upload_BI7QGL-icon.png");*/
+}
+#brewBtn6 {
+	position: absolute;
+	bottom: 185px;
+	right: 635px;
+	width: 75px;
+	height:35px;
+	background-color: black;
+	color: white;
+	border: solid 1px white;
+	/*background-image: url("https://s3.amazonaws.com/brewerydbapi/beer/7JENYQ/upload_NiG2rC-icon.png");*/
+}
+#brewBtn7 {
+	position: absolute;
+	bottom: 185px;
+	right: 745px;
+	width: 55px;
+	height:35px;
+	background-color: black;
+	color: white;
+	border: solid 1px white;
+	/*background-image: url("https://s3.amazonaws.com/brewerydbapi/beer/QWGfER/upload_QH5sxr-icon.png");*/
+	background-size: 50px 60px;
+    background-repeat: no-repeat;
+}
+
+aside {
+	position: absolute;
+	text-align: center;
+	font-size: 24px;
+	font: arial;
+	color: coral;
+	top: 50px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 100px;
+	background-color: rgba(0,0,0,0.75);
+}
+
+.display {
+	margin-left: 50px;
+}
