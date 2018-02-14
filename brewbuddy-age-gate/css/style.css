@@ -1,0 +1,28 @@
+body, html
+{
+  background-color:orange;
+  font-family: sans-serif;
+  
+}
+
+#enterBtn
+{
+  font-size:1.5em;
+  cursor:pointer;
+}
+
+#exitBtn
+{
+  font-size:1.5em;
+  cursor:pointer;
+}
+
+#age-footer{
+  text-align:center;
+  font-family:roboto;
+}
+
+#clickEnter{
+  text-align:center;
+  font-family:tahoma;
+}

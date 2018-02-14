@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>BrewBuddy </title>
+  
+  
+  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css'>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+<div class="modal fade" id="ageModal" tabindex="-1" role="dialog" aria-labelledby="ageModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      <div class="modal-body">	 
+	  <p id="clickEnter">Are you at least 21 years of age?</p>
+        <div id="age-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal" id="enterBtn">Yes</button>
+        <div class="btn btn-danger" id="exitBtn" onclick="NoAccess()">No</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src='http://code.jquery.com/jquery-3.2.1.slim.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js'></script>
+<script src='http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js'></script>
+
+  
+
+<script  src="js/index.js"></script>
+	
+<script type="text/javascript">
+    function pageRedirect() {
+      window.location.href = "../untitled.html";
+    }      
+</script> 	
+	
+
+</body>
+
+</html>

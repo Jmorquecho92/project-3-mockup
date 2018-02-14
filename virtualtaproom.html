@@ -1,74 +1,80 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title> TapRoom </title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="https://www.gstatic.com/firebasejs/4.5.2/firebase.js"></script>
-    <link rel="stylesheet" type="text/css" href="style1.css">
-    
-  </head>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-black bg-black">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="untitled.html">BrewBuddy</a>
-
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="untitled.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="virtualtaproom.html">Virtual Taproom</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="find.html">Find Breweries</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contactform.html">Contact</a>
-      </li>
-    </ul>
-  <!--   <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form> -->
-  <aside>
-  <a href="http://facebook.com" target="_blank"><img src="images/facebook.png"></a>
-  <a href="http://twitter.com" target="_blank"><img src="images/twitter.png"></a>
-  <a href="http://linkedin.com" target="_blank"><img src="images/linkedin.png"></a>
-  </aside>
-  </div>
-  </nav>
-  </header>
-         <div class="col-lg-3">
-
-                <form id="brew-form">
-                    <label for="newBrewInput">Add your FAVORITE Type of Brew</label>
-                    <input type="text" id="newBrewInput">
-                    <br>
-                    <input id="addBrew" type="submit" value="Submit">
-                </form>
-      
-                <div id="brewButtons2"></div>
-            </div>
-
+   <head>
+      <title> TapRoom </title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.5.2/firebase.js"></script>
+      <link rel="stylesheet" type="text/css" href="style1.css">
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-black bg-black">
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <a class="navbar-brand" href="untitled.html">BrewBuddy</a>
+         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+               <li class="nav-item active">
+                  <a class="nav-link" href="untitled.html">Home <span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="virtualtaproom.html">Virtual Taproom</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Find Breweries</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="contactform.html">Contact</a>
+               </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            -->
+            <!-- <aside>
+               <a href="http://facebook.com" target="_blank"><img src="images/facebook.png"></a>
+               <a href="http://twitter.com" target="_blank"><img src="images/twitter.png"></a>
+               <a href="http://linkedin.com" target="_blank"><img src="images/linkedin.png"></a>
+               </aside> -->
+         </div>
+      </nav>
       <div id="brewButtons1">
-      <img src="taproom.png" id="taproomPhoto">
+         <img src="taproom.png" id="taproomPhoto">
+      </div>
+      <body>
+         <nav class="navbar navbar-expand-lg navbar-black bg-black">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+         </nav>
+         <div id="brewButtons1">
+            <img src="taproom.png" id="taproomPhoto">
+         </div>
+         <div id="brewButtons1">
+            <img src="taproom.png" id="taproomPhoto">
+         </div>
+         <div class="col-lg-3">
+            </form>
+         </div>
+         </nav>
+         <div class="col-lg-3">
+            <form id="brew-form">
+               <label for="newBrewInput">Add your FAVORITE Type of Brew</label>
+               <input type="text" id="newBrewInput">
+               <br>
+               <input id="addBrew" type="submit" value="Submit">
+            </form>
+            <div id="brewButtons2"></div>
+         </div>
          <div class="display"></div>
-
-      
-      
-    </div>
-    <!--jQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/brew1.js"></script>
-
-  </body>
+         <!--jQuery -->
+         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+         <script type="text/javascript" src="brew1.js"></script>
+         <div class="display"></div>
+   </body>
 </html>
-
-		
