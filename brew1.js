@@ -62,7 +62,7 @@ var brewTitle = ["Stout", "IPA", "Double IPA", "Lager", "Pilsner", "Porter", "Al
 		$(".display").empty();
 
 		var thisBrew = $(this).data("name");
-		var brewURL = "http://api.brewerydb.com/v2/search?key=8ebe8cb050c4850b0c188999ca2f0d35&type=beer&q="+thisBrew;
+		var brewURL = "http://api.brewerydb.com/v2/search?key=8ebe8cb050c4850b0c188999ca2f0d35&withSocialAccounts=Y&type=beer&q="+thisBrew;
 		var proxy = 'http://www.chrisstead.com/proxy/?apikey=' + "08e200551e5b26e89410cfcdec2305a85bce6219" + '&requesturl=' + brewURL;
 		$.ajax({
 			url: proxy, 
