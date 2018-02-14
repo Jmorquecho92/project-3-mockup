@@ -1,41 +1,53 @@
 import React from 'react';
+import $ from 'jquery';
+import {Modal} from 'react-bootstrap';
+import {Button} from 'react-bootstrap';
 
 export class AgeCheck extends React.Component {
-   NoAccess()
-  {
-    // $("#clickEnter").html("You are not permitted to view the contents of this site.");  
-    // $("#clickEnter").css("color", "red");
-    // $("#clickEnter").css("font-weight", "bold");
-    // $("#age-footer").css("display", "none");
-  }
-  render() {
-    return (
+  //  NoAccess()
+  // {
+  //   $("#clickEnter").html("You are not permitted to view the contents of this site.");  
+  //   $("#clickEnter").css("color", "red");
+  //   $("#clickEnter").css("font-weight", "bold");
+  //   $("#age-footer").css("display", "none");
+  // }
+  constructor(props, context) {
+  super(props, context);
 
-      <div className="modal fade" id="ageModal" tabIndex={-1} role="dialog" aria-labelledby="ageModalLabel" aria-hidden="true">
-        <div className="modal-dialog">
-          <div className="modal-content">
-            <div className="modal-body">	 
-              <p id="clickEnter">Are you at least 21 years of age?</p>
-              <div id="age-footer">
-                <button type="button" className="btn btn-success" data-dismiss="modal" id="enterBtn">Yes</button>
-                <div className="btn btn-danger" id="exitBtn" onclick={this.NoAccess()}>No</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  this.state = {
+    modalVisible: true
+  };
+
+  this.open = this.open.bind(this);
+  this.close = this.close.bind(this);
+  }
+
+
+  open() {
+    this.setState({modalVisible: true});
+  }
+
+  close() {
+    this.setState({modalVisible: false});
+  }
+
+  render() {
+    return (   
+  <div className="static-modal">
+  <Modal show={this.state.modalVisible} onHide={this.close}>
+  <Modal.Dialog>
+    <Modal.Header>
+      <Modal.Title>Are you 21?</Modal.Title>
+    </Modal.Header>
+    <Modal.Body>By clicking yes you confirm you are of age 21 or older.</Modal.Body>
+    <Modal.Footer>
+      <Button onClick={this.close}>Yes</Button>
+      <Button bsStyle="primary">No</Button>
+    </Modal.Footer>
+  </Modal.Dialog>
+  </Modal>
+  </div>
     );
   }
 };
-
-
-// $(document).ready(function() {
-//     $('#ageModal').modal({
-//       backdrop: 'static',
-//       keyboard: false
-//     });
-//     $("#ageModal").modal("show"); 
-   
-
-// });
 
