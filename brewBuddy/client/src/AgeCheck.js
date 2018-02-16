@@ -10,7 +10,7 @@ export class AgeCheck extends React.Component {
   //   $("#clickEnter").css("color", "red");
   //   $("#clickEnter").css("font-weight", "bold");
   //   $("#age-footer").css("display", "none");
-  // }
+  //  }
   constructor(props, context) {
   super(props, context);
 
@@ -35,16 +35,14 @@ export class AgeCheck extends React.Component {
     return (   
   <div className="static-modal">
   <Modal show={this.state.modalVisible} onHide={this.close}>
-  <Modal.Dialog>
     <Modal.Header>
       <Modal.Title>Are you 21?</Modal.Title>
     </Modal.Header>
     <Modal.Body>By clicking yes you confirm you are of age 21 or older.</Modal.Body>
     <Modal.Footer>
       <Button onClick={this.close}>Yes</Button>
-      <Button bsStyle="primary">No</Button>
+      <Button onClick={this.close} bsStyle="primary">No</Button>
     </Modal.Footer>
-  </Modal.Dialog>
   </Modal>
   </div>
     );

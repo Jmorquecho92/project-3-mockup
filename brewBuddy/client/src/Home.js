@@ -1,5 +1,5 @@
 import React from 'react';
-//import {Facebook} from './images/facebook.png';
+import {Taproom} from './VirtualTaproom.js';
 //import {LinkedIn} from './images/LinkedIn.png';
 import {Image} from 'react-bootstrap';
 import {Thumbnail} from 'react-bootstrap';
@@ -24,13 +24,13 @@ export class Home extends React.Component {
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
-        <a class="nav-link" href="">Home</a>
+        <a class="nav-link" href="/">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="">Virtual Taproom</a>
+        <a class="nav-link" href="Taproom">Virtual Taproom</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="">Find Breweries</a>
+        <a class="nav-link" href="Find">Find Breweries</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="">Contact</a>
@@ -38,9 +38,9 @@ export class Home extends React.Component {
     </ul>
  
       <aside>
-    <a href="http://facebook.com"><img></img></a>
-  <a href="http://twitter.com" target="_blank"><img src={require('./twitter.svg')}></img></a>
-  <a href="http://linkedin.com" target="_blank"><img></img></a>
+    <a href="http://facebook.com"><img height={50} width={50} src="images/facebook.png"></img></a>
+  <a href="http://twitter.com" target="_blank"><img height={50} width={50} src={require('./twitter.svg')}></img></a>
+  <a href="http://linkedin.com" target="_blank"><img height={50} width={50} src="images/linkedin.png"></img></a>
     </aside>
   </div>
 </nav>

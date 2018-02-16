@@ -5,6 +5,7 @@ import './App.css';
 import {AgeCheck} from './AgeCheck.js';
 import {Home} from './Home.js';
 import {Find} from './Find.js';
+import {Taproom} from './VirtualTaproom.js';
 import {
   BrowserRouter as Router,
   Route,
@@ -16,8 +17,9 @@ class App extends React.Component {
     return (
     <Router>
       <div>
-      <AgeCheck />;
       <Route exact path="/" component={Home} />
+      <Route exact path="/Find" component={Find} />
+      <Route exact path="/Taproom" component={Taproom} />
       </div>
     </Router>
     );

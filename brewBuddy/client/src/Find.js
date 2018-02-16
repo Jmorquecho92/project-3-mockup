@@ -13,23 +13,23 @@ export class Find extends React.Component {
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
-        <a class="nav-link" href="untitled.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="virtualtaproom.html">Virtual Taproom</a>
+        <a class="nav-link" href="Taproom">Virtual Taproom</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="find.html">Find Breweries</a>
+        <a class="nav-link" href="Find">Find Breweries</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="contactform.html">Contact</a>
+        <a class="nav-link" href="">Contact</a>
       </li>
     </ul>
    
     <aside>
-    <a href="http://facebook.com" target="_blank"><img src="images/facebook.png"></img></a>
-  <a href="http://twitter.com" target="_blank"><img src="images/twitter.png"></img></a>
-  <a href="http://linkedin.com" target="_blank"><img src="images/linkedin.png"></img></a>
+    <a href="http://facebook.com" target="_blank"><img height={50} width={50} src="images/facebook.png"></img></a>
+  <a href="http://twitter.com" target="_blank"><img height={50} width={50} src="images/twitter.png"></img></a>
+  <a href="http://linkedin.com" target="_blank"><img height={50} width={50} src="images/linkedin.png"></img></a>
     </aside>
   </div>
 </nav>
@@ -54,6 +54,7 @@ export class Find extends React.Component {
   </div>
       </div>
       </div>
+      
 			);
 	}
 }
